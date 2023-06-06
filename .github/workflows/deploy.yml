@@ -33,14 +33,14 @@ jobs:
           BASE_PATH: '/app'
         run: |
           npm run build
-          touch build/.nojekyll
+          touch /build/.nojekyll
         working-directory: app
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v1
         with:
           # this should match the `pages` option in your adapter-static options
-          path: 'app/build/'
+          path: '/app/build/'
 
   deploy:
     needs: build_site
