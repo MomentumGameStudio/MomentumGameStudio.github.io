@@ -26,6 +26,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: app
 
       - name: build
         env:
@@ -33,6 +34,7 @@ jobs:
         run: |
           npm run build
           touch build/.nojekyll
+        working-directory: app
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v1
