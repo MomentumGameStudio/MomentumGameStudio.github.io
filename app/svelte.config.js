@@ -29,6 +29,7 @@ const config = {
     paths: {
       base: dev ? '' : process.env.BASE_PATH,
     }
+  }
 	// 	// vite: {
 	// 	// 	// Github Pages uses base directory
 	// 	// 	base: '/MomentumGameStudio.github.io/',
