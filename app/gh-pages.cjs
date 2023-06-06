@@ -1,7 +1,7 @@
 var ghpages = require('gh-pages');
 
 ghpages.publish(
-    'app', // path to public directory
+    './.svelte-kit', // path to public directory
     {
         branch: 'gh-pages',
         repo: 'https://github.com/MomentumGameStudio/MomentumGameStudio.github.io.git', // Update to point to your repository  

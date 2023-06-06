@@ -1,5 +1,5 @@
 import preprocess from "svelte-preprocess";
-import adapter from "@sveltejs/adapter-auto";
+import adapter from "@sveltejs/adapter-static";
 import { vitePreprocess } from "@sveltejs/kit/vite";
 
 const dev = process.argv.includes('dev');
@@ -24,7 +24,7 @@ const config = {
 			assets: 'build',
 			fallback: undefined,
       precompress: false,
-      strict:true
+      strict:false
 		}),
     paths: {
       base: dev ? '' : process.env.BASE_PATH,
